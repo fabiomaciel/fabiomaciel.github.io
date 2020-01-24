@@ -10,7 +10,7 @@ Fabio Maciel
 
 #### C6 Bank - São Paulo 
 
-_Aug/2013 - present_<br/>
+_Jul/2019 - Jan/2020_<br/>
 __Back End Developer__
 
 * Develop and maintained web services based in Javalin (Kotlin)
