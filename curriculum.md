@@ -5,8 +5,16 @@ Fabio Maciel
 * __macielfsouza@gmail.com__
 * __github.com/fabiomaciel__
 * __+55 11 9 72191685__
-* __brasileiro__
+* __Brazilian__
 
+
+#### C6 Bank - São Paulo 
+
+_Aug/2013 - present_<br/>
+__Back End Developer__
+
+* Develop and maintained web services based in Javalin (Kotlin)
+* Help team to put a considerable code coverage using jacoco and sonarcube
 
 #### Metasix Tecnologia - São Paulo 
 
