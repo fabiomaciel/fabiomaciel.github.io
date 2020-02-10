@@ -14,7 +14,8 @@ _Jul/2019 - Jan/2020_<br/>
 __Back End Developer__
 
 * Develop and maintained web services based in Javalin (Kotlin)
-* Help team to put a considerable code coverage using jacoco and sonarcube
+* Develop backend servies of investment funds and "cdb" products
+* Improvement quality of development with unit and component tests, jacoco and sonarcube.
 
 #### Metasix Tecnologia - São Paulo 
 
