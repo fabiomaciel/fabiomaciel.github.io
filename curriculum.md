@@ -7,10 +7,17 @@ Fabio Maciel
 * __+55 11 9 72191685__
 * __Brazilian__
 
+#### Ifood - Osasco 
+
+_Mar/2020 - Present_<br/>
+__Software Engineer__
+
+* Develop and maintained web services based in Java and Kotlin (Springboot)
+* Develop backend servies of anti-fraud
 
 #### C6 Bank - São Paulo 
 
-_Jul/2019 - Jan/2020_<br/>
+_Jul/2019 - Fev2020_<br/>
 __Back End Developer__
 
 * Develop and maintained web services based in Javalin (Kotlin)
