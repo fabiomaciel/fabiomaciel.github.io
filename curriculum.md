@@ -4,12 +4,22 @@ Fabio Maciel
 --------------
 * __macielfsouza@gmail.com__
 * __github.com/fabiomaciel__
+* __linkedin.com/in/fabiomaciel__
 * __+55 11 9 72191685__
 * __Brazilian__
 
-#### Ifood - Osasco 
+#### Itaú - São Paulo
+_Jul/2020 - Present_<br/>
+__Software Engineer__
 
-_Mar/2020 - Present_<br/>
+* Develop and maintained web services based in Java and Kotlin (Springboot)
+* Develop and support Backend servies of PIX (brazilian instant payment method)
+* Develop and support all micro services using AWS
+* Develop and support system with millions of access per day
+* Help Juniors members of team to develop their skills and deliver their tasks
+
+
+_Mar/2020 - Jul/2020_<br/>
 __Software Engineer__
 
 * Develop and maintained web services based in Java and Kotlin (Springboot)
