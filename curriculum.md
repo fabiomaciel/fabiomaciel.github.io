@@ -10,13 +10,17 @@ Fabio Maciel
 
 #### Itaú - São Paulo
 _Jul/2020 - Present_<br/>
-__Software Engineer__
+__Senior Software Engineer__
 
+* Responsible for architecting new systems and improve those are already running
+* Actuate as a technical reference of the team and others teams around the pix ecosystem
+* Work with devops team to find ways to reduce costs and improve infrastructure resources
+* Work with staff and principal engineers to improve all pix ecosystem spread among multiple teams
+* Helping team members to develop their skills, deliver their tasks and grow their career
 * Develop and maintained web services based in Java and Kotlin (Springboot)
 * Develop and support Backend servies of PIX (brazilian instant payment method)
-* Develop and support all micro services using AWS
+* Develop and support all micro-services using AWS
 * Develop and support system with millions of access per day
-* Help Juniors members of team to develop their skills and deliver their tasks
 
 
 _Mar/2020 - Jul/2020_<br/>
