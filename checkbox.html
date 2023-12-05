@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Payload Checkboxes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #checkboxContainer {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appDiv {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: relative;
+            cursor: pointer;
+            width: 60px;
+            height: 34px;
+            background-color: #ccc;
+            border-radius: 34px;
+            margin-right: 10px;
+        }
+
+        .slider:before {
+            content: "";
+            position: absolute;
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div id="checkboxContainer"></div>
+
+<script>
+    let jsonData = [
+        {"id": "app-name1", "payload": {"cache_enabled": true, "true_enabled": false}},
+        {"id": "app-name2", "payload": {"cache_enabled": true, "false_enabled": false}}
+    ];
+
+    function createCheckbox(id, key, value) {
+        const container = document.createElement('label');
+        container.classList.add('toggle-switch');
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `${id}-${key}`;
+        checkbox.checked = value;
+
+        checkbox.addEventListener('change', function () {
+            updateJsonData(id, key, this.checked);
+        });
+
+        const slider = document.createElement('div');
+        slider.classList.add('slider');
+
+        const label = document.createElement('span');
+        label.textContent = `${key}`;
+        label.classList.add('label');
+
+        container.appendChild(checkbox);
+        container.appendChild(slider);
+        container.appendChild(label);
+
+        return container;
+    }
+
+    function createAppDiv(app) {
+        const appDiv = document.createElement('div');
+        appDiv.classList.add('appDiv');
+
+        const appId = document.createElement('p');
+        appId.textContent = `App ID: ${app.id}`;
+        appDiv.appendChild(appId);
+
+        Object.entries(app.payload).forEach(([key, value]) => {
+            const checkbox = createCheckbox(app.id, key, value);
+            appDiv.appendChild(checkbox);
+            appDiv.appendChild(document.createElement('br'));
+        });
+
+        return appDiv;
+    }
+
+    function updateJsonData(id, key, checked) {
+        const appIndex = jsonData.findIndex(app => app.id === id);
+        if (appIndex !== -1) {
+            jsonData[appIndex].payload[key] = checked;
+            console.log(jsonData); // Log updated jsonData to console
+        }
+    }
+
+    function renderCheckboxes(data, containerId) {
+        const container = document.getElementById(containerId);
+
+        data.forEach(app => {
+            const appDiv = createAppDiv(app);
+            container.appendChild(appDiv);
+        });
+    }
+
+    renderCheckboxes(jsonData, 'checkboxContainer');
+</script>
+
+</body>
+</html>
