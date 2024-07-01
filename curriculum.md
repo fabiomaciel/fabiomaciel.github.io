@@ -8,8 +8,21 @@ Fabio Maciel
 * __+55 11 9 72191685__
 * __Brazilian__
 
+
 #### Itaú - São Paulo
-_Jul/2020 - Present_<br/>
+_Apr/2024 - Present_<br/>
+__Staff Software Engineer__
+
+* Responsible for architecting new systems and improve those are already running
+* Actuate as a technical reference of multiple team focused on backend and aws
+* Work to find ways to reduce costs and improve infrastructure resources
+* Work with other staff and principal engineers to improve all payments ecosystem spread among multiple teams
+* Helping team members to develop their skills and grow their career
+* Develop and support high available and scalable systems with millions of access per day
+
+
+#### Itaú - São Paulo
+_Jul/2020 - Apr/2024_<br/>
 __Senior Software Engineer__
 
 * Responsible for architecting new systems and improve those are already running
